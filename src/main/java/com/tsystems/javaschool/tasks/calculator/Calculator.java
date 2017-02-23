@@ -139,10 +139,5 @@ public class Calculator {
                 System.out.println("Неверное значение параметра operator");
         }
     }
-
-    public static void main(String[] args) {
-        Calculator c = new Calculator();
-        System.out.println(c.evaluate("10/(5-5)"));
-    }
 }
 
