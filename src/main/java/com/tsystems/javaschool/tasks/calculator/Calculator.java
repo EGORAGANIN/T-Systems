@@ -119,9 +119,7 @@ public class Calculator {
 
         double one = st.removeLast();
         double two = st.removeLast();
-        if (one == 0){
-            throw new ArithmeticException();
-        }
+
 
         switch (operator) {
             case '+':
@@ -134,6 +132,9 @@ public class Calculator {
                 st.add(two * one);
                 break;
             case '/':
+                if (one == 0){
+                    throw new ArithmeticException();
+                }
                 st.add(two / one);
                 break;
             default:
