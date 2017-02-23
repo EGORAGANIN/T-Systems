@@ -6,6 +6,7 @@ import java.util.Locale;
 
 public class Calculator {
 
+
     public String evaluate(String statement) {
         LinkedList<Double> value;
         try {
